@@ -2,7 +2,7 @@
     "name": "gabrielmella/buscador-cursos-alura",
     "description": "Buscador de cursos da alura.",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Gabriel Mella",
@@ -15,6 +15,9 @@
         "symfony/css-selector": "^6.1"
     },
     "autoload": {
+        "files": [
+            "functions.php"
+        ],
         "psr-4": {
             "Alura\\BuscadorDeCursos\\": "src/",
             "Alura\\BuscadorDeCursos\\Tests\\": "tests/"
@@ -37,5 +40,6 @@
     },
     "scripts-descriptions": {
         "checkGit": "Roda as verificações do código. Phan, PhpUnit, CodeSniffer"
-    }
+    },
+    "bin": ["buscar-cursos.php"]
 }
